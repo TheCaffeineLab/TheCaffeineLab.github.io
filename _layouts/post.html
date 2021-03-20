@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post-title">{{ page.title }}</div>
+
+  {% if page.tags.size > 0 %}
+  <div class="tags">
+	  {% for tag in page.tags %}
+	  	<span class="tag">{{ tag }}</span>
+	  {% endfor %}
+  </div>
+
+  {% endif %}
+  <div class="post-info">
+      {% if page.author %} {{ page.author }} {% else %} Unknown {% endif %} - Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+
+</article>
