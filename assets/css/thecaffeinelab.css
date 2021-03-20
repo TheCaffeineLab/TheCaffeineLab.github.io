@@ -86,6 +86,7 @@ h2 {
     border-style: solid;
     border-width: 1px;
     color: var(--blue-caffeine);
+    background-color: var(--blue-caffeine);
     opacity: 0.9;
 }
 
